@@ -1,0 +1,10 @@
+app_identifier("com.tektonlabs.example") # The bundle identifier of your app
+apple_id("diego.iturrizaga@tektonlabs.com") # Your Apple Developer Portal username
+
+itc_team_id("697400") # App Store Connect Team ID
+team_id("KL955RL3SL") # Developer Portal Team ID
+
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
