@@ -30,7 +30,8 @@ platform :ios do
     upload_to_testflight
   end
 
-  lane :beta do
+  desc "Push a new beta build to TestFlight2"
+  lane :create_beta do
     setup_ci if ENV['CI']
     match(type: 'appstore')
     build_app
