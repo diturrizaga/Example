@@ -1,10 +1,13 @@
-git_url("https://github.com/diturrizaga/Example.git")
+git_url("https://github.com/example/example-repo.git")
+git_branch("develop")
 
 storage_mode("git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
-# app_identifier(["tools.fastlane.app", "tools.fastlane.app2"])
+app_identifier(["com.tektonlabs.example"])
+username("diego.iturrizaga@tektonlabs.com")
+
 # username("user@fastlane.tools") # Your Apple Developer Portal username
 
 # For all available options run `fastlane match --help`
