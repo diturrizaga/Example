@@ -40,12 +40,12 @@ platform :ios do
 
   lane :beta2 do
     ensure_git_status_clean
-    increment_build_number(xcodeproj: "Example.xcodeproj")
-    commit_version_bump(xcodeproj: "Example.xcodeproj")
+    increment_build_number(xcodeproj: "ExampleMVVM.xcodeproj")
+    commit_version_bump(xcodeproj: "ExampleMVVM.xcodeproj")
     add_git_tag
     push_to_git_remote
     sync_code_signing(type: "appstore")    # see code signing guide for more information
-    build_app(scheme: "MyApp")
+    build_app(scheme: "ExampleMVVM")
     upload_to_testflight
     #slack(message: "Successfully distributed a new beta build")
   end
