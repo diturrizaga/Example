@@ -3,8 +3,11 @@ on:
   push:
     branches:
       - 'develop'
+  pull_request:
+    branches:
+      - 'develop'
 jobs:
-  deploy:
+  pull_request:
    runs-on: macos-latest
    steps:
      - uses: actions/checkout@v2
@@ -36,3 +39,5 @@ jobs:
          path: |
            ${{ github.workspace }}/example-iOS.ipa
            ${{ github.workspace }}/*.app.dSYM.zip
+
+           
