@@ -34,6 +34,22 @@ Create on Developer Portal and App Store Connect
 
 Push a new beta build to TestFlight
 
+### ios create_beta
+
+```sh
+[bundle exec] fastlane ios create_beta
+```
+
+Push a new beta build to TestFlight2
+
+### ios beta2
+
+```sh
+[bundle exec] fastlane ios beta2
+```
+
+
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
